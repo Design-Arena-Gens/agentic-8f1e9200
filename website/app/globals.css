@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 8 10 12;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+}
+
+/* Gradients */
+.bg-grid {
+  background-image: linear-gradient(rgba(14, 95, 65, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 95, 65, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px;
+  background-position: -12px -12px, -12px -12px;
+}
